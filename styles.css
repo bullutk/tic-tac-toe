@@ -1,0 +1,23 @@
+#board{
+	max-width: 640px;
+	min-width: 320px;
+	width: 75%;
+	margin: auto;
+}
+
+.square{
+	width: 30%;
+	background-color: white;
+	padding: 30px;
+	box-sizing: border-box;
+	float: left;
+	font-size: 80px;
+	border: 2px solid black;
+}
+.winning-square{
+	background-color: green !important;
+	color: red !important
+}
+img{
+	max-width: 75%;
+}
