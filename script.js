@@ -31,6 +31,23 @@ console.log(winningCombos)
 function onePlayerGame(){
 	computerPlayer = true;
 };
+
+$('.square').click(function(){
+	markSquare(this)
+	rotatePic(this)
+})
+function rotatePic(currentSquare){
+	$(currentSquare).addClass('moveMe')
+}
+function colorTurn(currentSquare){
+	if(whosTurn == 1){
+		$(currentSquare).addClass('p1');
+	}else{
+		$(currentSquare).addClass('p2');
+
+	}
+}
+
 function markSquare(currentSquare){
 	// console.log(square.id);
 	console.log(currentSquare.children[0].src);
@@ -52,6 +69,7 @@ function markSquare(currentSquare){
 			whosTurn = 1;
 			player2Squares.push(currentSquare.id);
 			checkWin(2, player2Squares);
+
 		}
 	}
 }

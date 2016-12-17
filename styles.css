@@ -13,9 +13,20 @@
 	float: left;
 	font-size: 80px;
 	border: 2px solid black;
+	transition: all 2s;
+}
+.square.moveMe{
+	transform: rotate(360deg);
+	border-radius: 50%
+}
+.p1:hover{
+	background-color: red;
+}
+.p2:hover{
+	background-color: blue;
 }
 .winning-square{
-	background-color: green !important;
+	background-color: orange !important;
 	color: red !important
 }
 img{
